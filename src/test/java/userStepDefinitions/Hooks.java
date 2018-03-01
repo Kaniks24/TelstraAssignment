@@ -20,10 +20,10 @@ public class Hooks {
 
 	@Before
 	public void openBrowser() throws MalformedURLException {
-		//String browser = System.getProperty("BROWSER");
-		String browser = getParameter("BROWSER");
-		if (browser == "chrome") {
-			System.setProperty("webdriver.chrome.driver","/Users/Shubham_MacbookPro/Desktop/chromedriver.exe");
+		String browser = System.getProperty("browserName");
+		System.out.println(browser);
+		if (browser.equalsIgnoreCase("chrome")) {
+			System.setProperty("webdriver.chrome.driver","/Users/Shubham_MacbookPro/Desktop/chromedriver");
 			driver = new ChromeDriver();
 		} else if (browser == "firefox") {
 			driver = new FirefoxDriver();
@@ -37,9 +37,6 @@ public class Hooks {
 		driver.get(weburl);
 	}
 
-	private String getParameter(String string) {
-		return null;
-	}
 
 	@After
 	public void embedScreenshot(Scenario scenario) {

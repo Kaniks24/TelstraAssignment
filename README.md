@@ -4,7 +4,8 @@
 * BDD: Cucumber 
 * Web Automation: Selenium 
 * Programming language: Java, Junit 
-* Covered 4 scenarios as mentioned, by running them in eclipse as well as terminal. 
+* Covered 4 scenarios as mentioned, by running them in eclipse as well as terminal.
+* Cross Browser testing in Firefox and Chrome.
 * Generated the reports in the target folder.
 
 ## Framework link:

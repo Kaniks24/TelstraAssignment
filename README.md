@@ -22,7 +22,9 @@
 
 ## Running Test:
 
-To run the Automation suite from the command line, go to the project directory from the Terminal and hit the below command:
+* To run the Automation suite from the command line, go to the project directory from the Terminal and hit the below command:
    `mvn test`
+* To pass the browser name dynamically as Maven parameter for Chrome browser:
+   `mvn test -DbrowserName=chrome`
 
 
